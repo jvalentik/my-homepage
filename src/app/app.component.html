@@ -1,21 +1,3 @@
-<h1>
-  {{title}}
-</h1>
-<div class="btn-group">
-  <button *ngFor="let lang of supportedLanguages"
-          (click)="selectLang(lang.value)"
-          class="btn btn-default" [class.btn-primary]="isCurrentLang(lang.value)">
-    {{ lang.display }}
-  </button>
-</div>
 <div>
-  <!--translate with pipe-->
-  <p>
-    Translate With Pipe: <strong>{{ 'hello world' | translate }}</strong>
-  </p>
-
-  <!--reanslate with service-->
-  <p>
-    Translate with Service: <strong>{{ translatedText }}</strong>
-  </p>
+  {{ 'HELLO' | translate:param }}
 </div>

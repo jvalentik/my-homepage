@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": "",
+    "noImplicitAny": true,
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -13,9 +14,11 @@
     "moduleResolution": "node",
     "outDir": "../dist/out-tsc",
     "sourceMap": true,
-    "target": "es5",
+    "inlineSources": true,
+    "compileOnSave": false,
+    "target": "es6",
     "typeRoots": [
-      "../node_modules/@types"
+
     ]
   }
 }
