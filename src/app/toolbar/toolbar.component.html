@@ -1,0 +1,10 @@
+<md-toolbar class="md-elevation-z24" color="primary">
+  <button #tooltip="mdTooltip"
+          [mdTooltip]="message"
+          [mdTooltipShowDelay]="1000"
+          [mdTooltipHideDelay]="500"
+          md-icon-button (click)="toggleMenu()"
+          class="md-elevation-z5">
+    <md-icon>menu</md-icon>
+  </button>
+</md-toolbar>

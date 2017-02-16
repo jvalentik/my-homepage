@@ -10,6 +10,12 @@ import { SharedModule } from './shared/shared.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeModule } from './home/home.module';
+import { NotfoundModule } from './notfound/notfound.module';
+import { ToolbarModule } from './toolbar/toolbar.module';
+import { SidenavModule } from './sidenav/sidenav.module';
+import { AboutModule } from './about/about.module';
 
 export function HttpLoaderFactory(http: Http) {
   return new TranslateHttpLoader(http);
@@ -33,7 +39,13 @@ export function HttpLoaderFactory(http: Http) {
       }
     }),
     CoreModule,
-    SharedModule
+    SharedModule,
+    AppRoutingModule,
+    HomeModule,
+    NotfoundModule,
+    ToolbarModule,
+    SidenavModule,
+    AboutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
