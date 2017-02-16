@@ -11,6 +11,7 @@ export class ToolbarComponent implements OnInit {
   public sideNav: MdSidenav;
 
   public message = 'Open menu';
+  public message2 = 'Settings';
 
   constructor() { }
   ngOnInit() {
