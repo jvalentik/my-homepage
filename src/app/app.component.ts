@@ -1,16 +1,16 @@
 
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { MdIconRegistry } from '@angular/material';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['app.component.scss']
 })
 export class AppComponent implements OnInit {
-  constructor(private translate: TranslateService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
+
   }
 }

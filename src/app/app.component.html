@@ -1,19 +1,2 @@
-<md-sidenav-container class="flex-container">
-  <md-sidenav #sidenav
-              mode="over">
-    <app-sidenav></app-sidenav>
-  </md-sidenav>
-  <div class="flex-container"
-       fxLayout="column">
-    <header fxFlex>
-      <app-toolbar [sideNav]="sidenav"></app-toolbar>
-    </header>
-    <section fxFlex="grow">
-      <router-outlet></router-outlet>
-    </section>
-    <footer>
-      <app-footer></app-footer>
-    </footer>
-  </div>
-</md-sidenav-container>
+<router-outlet></router-outlet>
 

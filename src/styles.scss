@@ -1,15 +1,16 @@
+
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/core/theming/all-theme';
 @import './app-theme';
 
 // Include material core styles.
-@include md-core();
+@include mat-core();
 
 // Define the light theme.
-$primary: md-palette($md-blue);
-$accent:  md-palette($md-amber, A200, A100, A400);
+$primary: mat-palette($mat-blue);
+$accent:  mat-palette($mat-amber, A200, A100, A400);
 
-$theme: md-light-theme($primary, $accent);
+$theme: mat-light-theme($primary, $accent);
 
 @include angular-material-theme($theme);
 @include material-site-app-theme($theme);
